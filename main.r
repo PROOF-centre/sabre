@@ -2,10 +2,10 @@
 library(WGCNA)
 enableWGCNAThreads()
 
-source("calcHScore.r")
-source("distm.r")
-source("runWGCNA.r")
-source("similarity.r")
+source("functions/calcHScore.r")
+source("functions/distm.r")
+source("functions/runWGCNA.r")
+source("functions/similarity.r")
 data.all = read.table("sample gene expression.csv",sep=",",head=TRUE,row.names=1)
 
 samples.all = colnames(data.all)
